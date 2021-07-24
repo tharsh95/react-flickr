@@ -3,13 +3,15 @@ import axios from 'axios'
 import './defaultdata.css'
 import { useEffect } from 'react/cjs/react.development'
 import Modal from 'react-modal'
-// import Navbar from './Navbar'
+
 Modal.setAppElement('#root')
 const Defaultdata = () => {
     const [img, setImg] = useState([])
     const [modalImg, setModalImg] = useState("")
     const [modalIsOpen, setModalIsOpen] = useState(false)
-
+    const [key, setKey] = useState()
+    
+    
         useEffect(() => {
 
         axios.get(`https://www.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=7dac89ea8f85859230ab7bd53e97ad60&format=json&nojsoncallback=1`)
@@ -20,8 +22,8 @@ const Defaultdata = () => {
                 let picArray = result.map((el) => {
                     let srcPath = `https://live.staticflickr.com/${el.server}/${el.id}_${el.secret}_w.jpg`
                     return (<>
-                        <img onClick={() => handleClick(srcPath)} key={el.id} src={srcPath} alt={el.owner} />
-                        
+                        {/* <img onClick={() => handleClick(srcPath,el.id)} key={el.id} src={srcPath} alt={el.owner} /> */}
+                        {srcPath}
                         </>
                     )
                 })
@@ -30,10 +32,11 @@ const Defaultdata = () => {
 
 
     }, [])
-    const handleClick = (src) =>{
+    const handleClick = (src,id) =>{
         setModalIsOpen(true)
         setModalImg(src)
-        // console.log(modalImg)
+        setKey(id)
+        
     }
 
 
@@ -42,27 +45,28 @@ const Defaultdata = () => {
         <div className="header">Flickr</div>
 
         <div className="imgContainer">
-            {img}
+            {img.map((el,index)=><img onClick={()=>handleClick(el.props.children)}src={el.props.children} key={index} alt={index}/>)}
+            </div>
+            <div>
             <Modal 
             isOpen={modalIsOpen} 
-             onRequestClose={() => setModalIsOpen(false)} 
-             style={
-                 {
+             onRequestClose={() => setModalIsOpen(false)}
+              style={
+              { 
                      overlay:{
-                         backgroundColor:'grey'
+                         backgroundColor:'grey',
+                         
                      },
                      content:{
-                         backgroundColor:"black",
-                         display:'flex',
-                         justifyContent:'center',
-                         alignContent:'center'
-                        
+                         backgroundColor:"white",
+                        display:'grid',
+                        placeItems:'center'
 
                      }
                  }
              }>
             
-                {<img id="modalImg" key={modalImg} src={modalImg} alt={modalImg}/>}
+                {<img id="modalImg" key={key} src={modalImg} alt={modalImg}/>}
 
             </Modal>
 

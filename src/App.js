@@ -19,7 +19,7 @@ function App() {
       <button onClick={()=>handleHome()} disabled={def}>Home</button>
       <button onClick={()=>handleSearch()} disabled={!def}>Search Images</button>
      { def===true?
-      <Defaultdata/>:
+    <Defaultdata/>: 
       <FetchingSearch/>}
       
       

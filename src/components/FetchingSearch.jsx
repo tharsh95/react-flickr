@@ -4,7 +4,7 @@ import axios from 'axios';
 import Navbar from './Navbar';
 import './FetchingSearch.css'
 const FetchingSearch = (props) => {
-    const [page,setPage]=useState(1)
+    const [page, setPage] = useState(1)
     let perpage = 9;
     const [search, setSearch] = useState("")
     const [searchA, setSearchA] = useState([])
@@ -26,25 +26,25 @@ const FetchingSearch = (props) => {
                     let srcPath = `https://live.staticflickr.com/${el.server}/${el.id}_${el.secret}_w.jpg`
                     return (
 
-                        <img onClick={()=>handleClick(srcPath)} key={el.id} src={srcPath} alt={el.owner} />
-                    
+                        <img onClick={() => handleClick(srcPath)} key={el.id} src={srcPath} alt={el.owner} />
+
                     )
                 })
                 setSearchA(searchArray)
             })
     }
-    const handleClick =(src)=>{
+    const handleClick = (src) => {
         setModalIsOpen(true)
         setModalImg(src)
     }
     window.onscroll = function () {
-        if (window.innerHeight + document.documentElement.scrollTop >= document.documentElement.offsetHeight-5 ) {
+        if (window.innerHeight + document.documentElement.scrollTop >= document.documentElement.offsetHeight - 5) {
             setTimeout(() => {
-                perpage=perpage+9
-                setPage(page=>page+1)
+                perpage = perpage + 3
+                setPage(page => page + 1)
                 handleSubmit()
 
-            }, 300);
+            }, 1000);
         }
 
     }
@@ -54,28 +54,28 @@ const FetchingSearch = (props) => {
             <Navbar onChange={handleChange} onClick={handleSubmit} />
             <div className="searchContainer">
                 {searchA}
-                <Modal 
-            isOpen={modalIsOpen} 
-             onRequestClose={() => setModalIsOpen(false)} 
-             style={
-                 {
-                     overlay:{
-                         backgroundColor:'grey'
-                     },
-                     content:{
-                         backgroundColor:"black",
-                         display:'flex',
-                         justifyContent:'center',
-                         alignContent:'center'
-                        
+                <Modal
+                    isOpen={modalIsOpen}
+                    onRequestClose={() => setModalIsOpen(false)}
+                    style={
+                        {
+                            overlay: {
+                                backgroundColor: 'grey'
+                            },
+                            content: {
+                                backgroundColor: "white",
+                                display:'grid',
+                                placeItems:'center'
 
-                     }
-                 }
-             }>
-            
-                {<img id="modalImg" key={modalImg} src={modalImg} alt={modalImg}/>}
 
-            </Modal>
+
+                            }
+                        }
+                    }>
+
+                    {<img id="modalImg" key={modalImg} src={modalImg} alt={modalImg} />}
+
+                </Modal>
 
             </div>
         </>
