@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+.imgContainer{
+    padding: 3.5rem 5rem 6rem 9rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.header{
+    color: beige;
+    font-family: 'Italianno', cursive;
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+}
+#modalImg{
+    height: 250px;
+    width: 600px;
+}

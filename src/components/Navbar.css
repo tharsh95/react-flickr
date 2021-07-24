@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+.navbar {
+  
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  color: beige;
+}
+.navHeader {
+  font-family: 'Italianno', cursive;
+  font-size: 3rem;
+  padding: 20px;
+}
+.searchInput {
+  padding: 10px;
+  width: 25%;
+  border-radius: 8px;
+}
+button{
+  padding: 0px;
+  background-color: #3dcfd3;
+}
+button:hover{
+  background-color:grey;
+  color: black;
+  opacity: 1;
+  transition: all 0.9s ease;
+}
