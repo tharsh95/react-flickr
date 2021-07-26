@@ -8,7 +8,7 @@ const Defaultdata = () => {
     const [img, setImg] = useState([])
     const [modalImg, setModalImg] = useState("")
     const [modalIsOpen, setModalIsOpen] = useState(false)
-    const [key, setKey] = useState()
+    
     
     
         useEffect(() => {
@@ -21,7 +21,6 @@ const Defaultdata = () => {
                 let picArray = result.map((el) => {
                     let srcPath = `https://live.staticflickr.com/${el.server}/${el.id}_${el.secret}_w.jpg`
                     return (<>
-                        {/* <img onClick={() => handleClick(srcPath,el.id)} key={el.id} src={srcPath} alt={el.owner} /> */}
                         {srcPath}
                         </>
                     )
@@ -34,7 +33,7 @@ const Defaultdata = () => {
     const handleClick = (src,id) =>{
         setModalIsOpen(true)
         setModalImg(src)
-        setKey(id)
+        
         
     }
 
@@ -65,7 +64,7 @@ const Defaultdata = () => {
                  }
              }>
             
-                {<img id="modalImg" key={key} src={modalImg} alt={modalImg}/>}
+                {<img id="modalImg" key={modalImg} src={modalImg} alt={modalImg}/>}
 
             </Modal>
 

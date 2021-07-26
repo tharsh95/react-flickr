@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 import './FetchingSearch.css'
 const FetchingSearch = (props) => {
     const [page, setPage] = useState(1)
-    let perpage = 9;
+    let perpage = 90;
     const [search, setSearch] = useState("")
     const [searchA, setSearchA] = useState([])
     const [modalImg, setModalImg] = useState("")

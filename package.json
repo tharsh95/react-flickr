@@ -2,7 +2,7 @@
   "name": "flickr",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tharsh95.github.io/react-fllickr",
+  "homepage": "https://tharsh95.github.io/react-flickr",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
