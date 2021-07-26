@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState , useEffect} from 'react'
 import axios from 'axios'
 import './defaultdata.css'
-import { useEffect } from 'react/cjs/react.development'
 import Modal from 'react-modal'
 
 Modal.setAppElement('#root')
