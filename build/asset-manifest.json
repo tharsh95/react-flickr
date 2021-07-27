@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-flickr/static/css/main.afde8018.chunk.css",
+    "main.css": "/react-flickr/static/css/main.5cf56a39.chunk.css",
     "main.js": "/react-flickr/static/js/main.8df9e7c0.chunk.js",
     "main.js.map": "/react-flickr/static/js/main.8df9e7c0.chunk.js.map",
     "runtime-main.js": "/react-flickr/static/js/runtime-main.8042171d.js",
@@ -10,14 +10,14 @@
     "static/js/3.990ac08f.chunk.js": "/react-flickr/static/js/3.990ac08f.chunk.js",
     "static/js/3.990ac08f.chunk.js.map": "/react-flickr/static/js/3.990ac08f.chunk.js.map",
     "index.html": "/react-flickr/index.html",
-    "static/css/main.afde8018.chunk.css.map": "/react-flickr/static/css/main.afde8018.chunk.css.map",
+    "static/css/main.5cf56a39.chunk.css.map": "/react-flickr/static/css/main.5cf56a39.chunk.css.map",
     "static/js/2.d1e9bd86.chunk.js.LICENSE.txt": "/react-flickr/static/js/2.d1e9bd86.chunk.js.LICENSE.txt",
     "static/media/FetchingSearch.css": "/react-flickr/static/media/backimg.5209c8d1.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.8042171d.js",
     "static/js/2.d1e9bd86.chunk.js",
-    "static/css/main.afde8018.chunk.css",
+    "static/css/main.5cf56a39.chunk.css",
     "static/js/main.8df9e7c0.chunk.js"
   ]
 }
