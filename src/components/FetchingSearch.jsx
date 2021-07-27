@@ -63,7 +63,7 @@ const FetchingSearch = (props) => {
                                 backgroundColor: 'grey'
                             },
                             content: {
-                                backgroundColor: "white",
+                                backgroundColor:"black",
                                 display:'grid',
                                 placeItems:'center'
 

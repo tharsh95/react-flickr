@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
-.imgContainer{
-    /* padding: 3.5rem 5rem 6rem 9rem; */
-}
+
 .header{
-    color: beige;
+    color: black;
+    font-weight: 1000;
     font-family: 'Italianno', cursive;
     font-size: 3rem;
     padding: 0;
     margin: 0;
 }
  #modalImg{ 
-    height: 250px;
+    height: 500px;
     width: 600px;
 } 

@@ -1,5 +1,5 @@
 body{
-background-color: black;
+background-image: url(backimg.jpg);
 }
 img{
     width: 150px;
@@ -7,8 +7,11 @@ img{
     padding-bottom: 25px;
     padding: 5px ;
     margin-top: 20px;
+    border-radius: 50px;
+    /* border: 3px solid black; */
 } 
+
 .searchContainer{
 
-    margin-top: 2rem;
+    margin-top: 4rem;
 }

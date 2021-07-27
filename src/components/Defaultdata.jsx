@@ -56,7 +56,7 @@ const Defaultdata = () => {
                          
                      },
                      content:{
-                         backgroundColor:"white",
+                         backgroundColor:"black",
                         display:'grid',
                         placeItems:'center'
 
