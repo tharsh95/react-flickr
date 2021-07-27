@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-flickr/static/css/main.fba69bde.chunk.css",
+    "main.css": "/react-flickr/static/css/main.4418e3b6.chunk.css",
     "main.js": "/react-flickr/static/js/main.2ad31c84.chunk.js",
     "main.js.map": "/react-flickr/static/js/main.2ad31c84.chunk.js.map",
     "runtime-main.js": "/react-flickr/static/js/runtime-main.8042171d.js",
@@ -10,13 +10,13 @@
     "static/js/3.990ac08f.chunk.js": "/react-flickr/static/js/3.990ac08f.chunk.js",
     "static/js/3.990ac08f.chunk.js.map": "/react-flickr/static/js/3.990ac08f.chunk.js.map",
     "index.html": "/react-flickr/index.html",
-    "static/css/main.fba69bde.chunk.css.map": "/react-flickr/static/css/main.fba69bde.chunk.css.map",
+    "static/css/main.4418e3b6.chunk.css.map": "/react-flickr/static/css/main.4418e3b6.chunk.css.map",
     "static/js/2.d1e9bd86.chunk.js.LICENSE.txt": "/react-flickr/static/js/2.d1e9bd86.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8042171d.js",
     "static/js/2.d1e9bd86.chunk.js",
-    "static/css/main.fba69bde.chunk.css",
+    "static/css/main.4418e3b6.chunk.css",
     "static/js/main.2ad31c84.chunk.js"
   ]
 }
